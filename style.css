@@ -21,6 +21,7 @@ p {
 }
 
 body {
+  margin: 0;
   background-color: hsl(var(--clr-light));
   /* background-color: hotpink; */
   font-size: var(--fs-400);
@@ -34,8 +35,8 @@ body {
 
 .container {
   max-width: 45em;
-  /* margin-inline: minmax(4em, auto); */
-  margin-inline: 2em;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .flex--container {
@@ -76,6 +77,10 @@ body {
   background-color: hsl(var(--clr-cyan));
 }
 
+.top-card {
+  margin-top: 1em;
+}
+
 .white {
   background-color: hsl(var(--clr-white));
 }
@@ -93,7 +98,7 @@ body {
   color: hsl(var(--clr-white));
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 500px) {
   .flex {
     flex-direction: row;
     /* flex-basis: 100%; */
@@ -112,8 +117,8 @@ body {
     min-height: 7.5em;
   }
 
-  .card {
-    /* width: 100%; */
+  .other-cards > div {
+    width: 100%;
   }
 }
 
